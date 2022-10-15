@@ -3,11 +3,18 @@
 # is printed without changes. Given string is at first transformed to lower case.
 
 word, n = input().lower(), int(input())
-if n % 26 == 0: print(word)
+if n % 26 == 0:
+    print(word)
 else:
-    while n >= 26: n-= 26
+    while n < 0:
+        n += 26
+    while n > 26:
+        n -= 26
     for pos, i in enumerate(word):
-        if pos % 2 == 1 and i.isalpha() == True:
-            if chr(ord(i) + n).isalpha() == True: print(chr(ord(i)+n), end = '')
-            else: print(chr(ord(i) + n - 26), end = '')
-        else: print(i, end = '')
+        if pos % 2 == 1 and i.isalpha():
+            if chr(ord(i) + n).isalpha():
+                print(chr(ord(i) + n), end="")
+            else:
+                print(chr(ord(i) + n - 26), end="")
+        else:
+            print(i, end="")
