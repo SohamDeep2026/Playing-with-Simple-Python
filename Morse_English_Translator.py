@@ -1,4 +1,7 @@
 # This is a choice-based program translates user-input Morse code to English, and generates Morse code of an English user-input.
+# The considered Morse code is the International Morse Code:
+# 1. Length of a dot and a dash are 1 and 3 units respectively(This hasn't been required in the program though)
+# 2. There are 1 space between parts of same letter, 3 spaces between different letters but same word, and 7 spaces between letters of different words.
 
 # Test Samples:
 # Morse 1: . - - .   - . - -       . .   . . .       . . - .   . . -   - .
