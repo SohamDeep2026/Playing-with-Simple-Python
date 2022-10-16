@@ -3,7 +3,7 @@
 # 1. Length of a dot and a dash are 1 and 3 units respectively(This hasn't been required in the program though)
 # 2. There are 1 space between parts of same letter, 3 spaces between different letters but same word, and 7 spaces between letters of different words.
 
-# Test Samples:
+# Sample test cases:
 # Morse 1: . - - .   - . - -       . .   . . .       . . - .   . . -   - .
 # English 1: py is fun
 # Morse 2: . - - .   - . - -   -   . . . .   - - -   - .       . . . - -       . .   . . .       . . - .   . . -   - .
