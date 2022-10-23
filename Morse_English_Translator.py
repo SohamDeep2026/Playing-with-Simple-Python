@@ -51,7 +51,7 @@ morse_code = (
 choice = input("Enter 0 to translate from English to Morse,\nEnter 1 to translate from Morse to English\n")
 
 if choice == "0":
-    eng_input = (input("Enter the English sentence to be translated.\n").lower().split(" "))
+    eng_input = input("Enter the English sentence to be translated.\n").lower().split(" ")
 
     eng_words = []
     for i in range(len(eng_input)):
@@ -77,7 +77,7 @@ if choice == "0":
     print("Translation in Morse:\n", translation, sep="")
 
 elif choice == "1":
-    morse_input = (input("Enter the morse code to be translated.\n").lower().split("       "))
+    morse_input = input("Enter the morse code to be translated.\n").lower().split("       ")
 
     morse_words = []
     for i in range(len(morse_input)):
