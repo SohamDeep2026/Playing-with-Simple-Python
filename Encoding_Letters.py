@@ -2,7 +2,8 @@
 # unicode by decreasing or incresing their unicode according to user input, while the rest of the string
 # is printed without changes. Given string is at first transformed to lower case.
 
-word, n = input().lower(), int(input())
+word = input().lower()
+n = int(input())
 if n % 26 == 0:
     print(word)
 else:
