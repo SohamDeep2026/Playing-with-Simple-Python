@@ -4,6 +4,9 @@
 num = input()
 sum = 0
 length = len(num)
-for i in num: sum += int(i) ** length
-if sum == int(num): print('Yes')
-else: print('No')
+for i in num:
+    sum += int(i) ** length
+if sum == int(num):
+    print('Yes')
+else:
+    print('No')
