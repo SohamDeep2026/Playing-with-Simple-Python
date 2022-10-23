@@ -5,7 +5,7 @@ s = input()
 s2 = input()
 minn = min(len(s), len(s2))
 for i in range(minn):
-  print(s[0], s2[0], sep = '', end = '')
+  print(s[0], s2[0], sep='', end='')
   s = s[1:]
   s2 = s2[1:]
-print(s, s2, sep = '')
+print(s, s2, sep='')
