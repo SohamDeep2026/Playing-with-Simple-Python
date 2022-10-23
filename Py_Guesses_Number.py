@@ -6,7 +6,10 @@
 
 from random import randint
 
-def prog(random_num, count, prev_val):
+def prog(
+    random_num,
+    count,
+    prev_val):
     while random_num not in prev_val:
         p = ['Is', str(random_num), 'the number?']
         reply = input(' '.join(p)).lower()
@@ -19,11 +22,15 @@ def prog(random_num, count, prev_val):
             random_num = randint(1, 20)
     else:
         random_num = randint(1, 20)
-        prog(random_num, count, prev_val)
+        prog(random_num,
+             count,
+             prev_val)
 
 
 num = int(input('Think a number between 1 and 20'))
 random_num = randint(1, 20)
 prev_val = []
 count = 0
-prog(random_num, count, prev_val)
+prog(random_num,
+    count,
+    prev_val)
